@@ -112,12 +112,6 @@
     }
 
     var contact = config.contact || {};
-    var emailSlot = document.getElementById("contact-email");
-    if (emailSlot) {
-      emailSlot.innerHTML = isEmail(contact.teamEmail)
-        ? '<a class="btn btn-ts-white btn-lg mb-0" href="mailto:' + escapeHtml(contact.teamEmail) + '"><span class="material-symbols-rounded me-1" aria-hidden="true">mail</span>' + escapeHtml(contact.teamEmail) + "</a>"
-        : '<span class="ts-pending-text">Team email coming soon</span>';
-    }
     var standSlot = document.getElementById("contact-stand");
     if (standSlot) {
       standSlot.textContent = contact.projectsDayStand || "Stand details coming soon";

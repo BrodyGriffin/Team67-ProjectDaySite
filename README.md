@@ -9,7 +9,6 @@ The site is front-end only: one static HTML page with CSS and a small amount of 
 All team and contact details that still need filling in live in **[`assets/js/config.js`](assets/js/config.js)**:
 
 - team members: name, student number, photo, LinkedIn, email, and optionally a personal GitHub profile
-- the shared team email
 - the Projects Day stand location
 
 Any value left as `""` shows a "coming soon" state on the site instead of a broken link.

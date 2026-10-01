@@ -47,7 +47,6 @@ window.TRACESTOCK_CONFIG = {
   university: "University of Johannesburg",
 
   contact: {
-    teamEmail: "", // TODO: shared team inbox, e.g. teamnexus@...
     projectsDayStand: "", // TODO: e.g. "Stand 14, Auditorium foyer"
   },
 };
