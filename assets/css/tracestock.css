@@ -367,6 +367,9 @@ a:hover { color: var(--ts-info-focus); }
 .ts-shot-placeholder .material-symbols-rounded { font-size: 2.25rem; color: var(--ts-info); opacity: .7; }
 .ts-shot-placeholder strong { color: var(--ts-heading); }
 .ts-shot.has-image .ts-shot-placeholder { display: none; }
+/* Real screenshots keep their own proportions, so nothing is cropped */
+.ts-shot.has-image { aspect-ratio: auto; }
+.ts-shot.has-image img { height: auto; }
 .ts-tour-caption { font-size: .9rem; margin-top: 1rem; text-align: center; }
 .ts-tour-caption strong { color: var(--ts-heading); display: block; }
 

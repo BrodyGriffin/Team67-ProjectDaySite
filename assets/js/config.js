@@ -14,7 +14,7 @@ window.TRACESTOCK_CONFIG = {
       studentNumber: "223064733",
       photo: "", // TODO: e.g. "assets/img/team/brody.jpg" (square, at least 400x400)
       linkedin: "https://www.linkedin.com/in/brody-griffin-522b2a258",
-      email: "", // TODO
+      email: "brody.bg.griffin@gmail.com",
       githubProfile: "", // optional personal profile, e.g. https://github.com/<username>
     },
     {
@@ -22,7 +22,7 @@ window.TRACESTOCK_CONFIG = {
       studentNumber: "223005556",
       photo: "",
       linkedin: "",
-      email: "",
+      email: "itumelengmorena20@gmail.com",
       githubProfile: "",
     },
     {
@@ -30,15 +30,15 @@ window.TRACESTOCK_CONFIG = {
       studentNumber: "223142765",
       photo: "",
       linkedin: "",
-      email: "",
+      email: "murovhizwoitwahor@gmail.com",
       githubProfile: "",
     },
     {
       name: "Kamogelo Kedige", // TODO: confirm preferred display name
       studentNumber: "222022950",
       photo: "",
-      linkedin: "",
-      email: "",
+      linkedin: "https://www.linkedin.com/in/kamogelo-kedige-bb2841389",
+      email: "kedigekamogelo32@gmail.com",
       githubProfile: "",
     },
   ],
