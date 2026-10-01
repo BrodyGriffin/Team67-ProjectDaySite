@@ -238,16 +238,37 @@
 
   /* ---------- Screenshots: show the image only if it exists ---------- */
   function initScreenshots() {
-    document.querySelectorAll(".ts-shot[data-src]").forEach(function (shot) {
+    var shots = document.querySelectorAll(".ts-shot[data-src]");
+
+    // Note: no loading="lazy" here. Chrome never fetches a lazy image that is not
+    // attached to the document, so onload would never fire. Deferral is handled by
+    // the IntersectionObserver below instead.
+    function load(shot) {
       var img = new Image();
       img.alt = shot.getAttribute("data-alt") || "";
-      img.loading = "lazy";
+      img.decoding = "async";
       img.onload = function () {
         shot.insertBefore(img, shot.firstChild);
         shot.classList.add("has-image");
       };
       img.src = shot.getAttribute("data-src");
-    });
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      shots.forEach(load);
+      return;
+    }
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          observer.unobserve(entry.target);
+          load(entry.target);
+        });
+      },
+      { rootMargin: "600px 0px" }
+    );
+    shots.forEach(function (shot) { observer.observe(shot); });
   }
 
   function initYear() {
