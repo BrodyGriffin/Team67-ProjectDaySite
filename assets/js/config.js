@@ -15,23 +15,23 @@ window.TRACESTOCK_CONFIG = {
       photo: "", // TODO: e.g. "assets/img/team/brody.jpg" (square, at least 400x400)
       linkedin: "https://www.linkedin.com/in/brody-griffin-522b2a258",
       email: "brody.bg.griffin@gmail.com",
-      githubProfile: "", // optional personal profile, e.g. https://github.com/<username>
+      githubProfile: "https://github.com/BrodyGriffin",
     },
     {
       name: "Itumeleng Morena", // TODO: confirm preferred display name
       studentNumber: "223005556",
       photo: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/itumeleng-morena-6a4371328/",
       email: "itumelengmorena20@gmail.com",
-      githubProfile: "",
+      githubProfile: "https://github.com/itudevs",
     },
     {
       name: "Zwoitwaho Murovhi", // TODO: confirm preferred display name
       studentNumber: "223142765",
       photo: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/murovhi-zwoitwaho-9ab661298/",
       email: "murovhizwoitwahor@gmail.com",
-      githubProfile: "",
+      githubProfile: "https://github.com/ZwoitwahoM",
     },
     {
       name: "Kamogelo Kedige", // TODO: confirm preferred display name
@@ -39,7 +39,7 @@ window.TRACESTOCK_CONFIG = {
       photo: "",
       linkedin: "https://www.linkedin.com/in/kamogelo-kedige-bb2841389",
       email: "kedigekamogelo32@gmail.com",
-      githubProfile: "",
+      githubProfile: "https://github.com/Kamogelo-Kedige",
     },
   ],
 
