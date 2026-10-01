@@ -13,7 +13,7 @@ window.TRACESTOCK_CONFIG = {
       name: "Brody Griffin", // TODO: confirm preferred display name
       studentNumber: "223064733",
       photo: "", // TODO: e.g. "assets/img/team/brody.jpg" (square, at least 400x400)
-      linkedin: "", // TODO: https://www.linkedin.com/in/...
+      linkedin: "https://www.linkedin.com/in/brody-griffin-522b2a258",
       email: "", // TODO
       githubProfile: "", // optional personal profile, e.g. https://github.com/<username>
     },
