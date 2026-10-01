@@ -1,0 +1,8 @@
+services:
+  tracestock-projectday:
+    build: .
+    image: tracestock-projectday:latest
+    container_name: tracestock-projectday
+    ports:
+      - "8080:80"
+    restart: unless-stopped

@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TraceStock · Team Nexus</title>
+  <meta name="description" content="TraceStock is an off-grid livestock traceability and monitoring system for South African farming cooperatives, built by Team Nexus at the University of Johannesburg.">
+  <meta name="theme-color" content="#312512">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TraceStock: off-grid livestock traceability">
+  <meta property="og:description" content="Smart ear tags, on-farm base stations and cooperative trucks that carry farm data to the cloud. Offline today, connected tomorrow.">
+  <meta property="og:image" content="assets/img/brand/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="assets/img/brand/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/brand/emblem-256.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=block">
+
+  <link rel="stylesheet" href="assets/vendor/material-kit/material-kit.min.css">
+  <link rel="stylesheet" href="assets/css/tracestock.css">
+  <script src="assets/js/head.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ======================= NAVBAR ======================= -->
+  <header class="ts-navbar-wrap">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg ts-navbar" aria-label="Primary">
+        <a class="ts-brand" href="#top">
+          <span class="ts-brand-mark"><img src="assets/img/brand/emblem-256.png" alt="" width="36" height="36"></span>
+          <span class="ts-brand-word"><span class="trace">Trace</span><span class="stock">Stock</span></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#ts-nav" aria-controls="ts-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="ts-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="ts-nav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="#problem">Problem</a></li>
+            <li class="nav-item"><a class="nav-link" href="#solution">Solution</a></li>
+            <li class="nav-item"><a class="nav-link" href="#how-it-works">How it works</a></li>
+            <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+            <li class="nav-item"><a class="nav-link" href="#engineering">Engineering</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tech">Tech</a></li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><a class="btn btn-ts-info btn-sm mb-0 w-100" href="#contact">Connect</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ======================= HERO ======================= -->
+    <section class="ts-hero" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="ts-badge ts-badge-glass mb-4"><span class="material-symbols-rounded" aria-hidden="true">school</span>Team Nexus · Team 67 · University of Johannesburg · 2026</span>
+            <p class="ts-hero-tagline mb-3">Offline today, connected tomorrow</p>
+            <h1 id="hero-title" class="mb-4">Livestock traceability that works where the signal doesn't.</h1>
+            <p class="lead mb-5">TraceStock is an off-grid livestock traceability and monitoring system for South African farming cooperatives. Smart ear tags, on-farm base stations and cooperative trucks carry every animal's record from remote farms to the platforms that buyers and exporters require.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a class="btn btn-ts-white btn-lg mb-0" href="#how-it-works"><span class="material-symbols-rounded me-1" aria-hidden="true">route</span>See how it works</a>
+              <a class="btn btn-ts-outline-white btn-lg mb-0" href="#team"><span class="material-symbols-rounded me-1" aria-hidden="true">groups</span>Meet the team</a>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block">
+            <div class="ts-hero-emblem">
+              <img src="assets/img/brand/emblem-512.png" alt="TraceStock emblem: a tagged cow, radio mast, cooperative truck and cloud upload above green farmland" width="512" height="512">
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="ts-hero-scroll" href="#problem" aria-label="Scroll to the problem"><span class="material-symbols-rounded" aria-hidden="true">keyboard_double_arrow_down</span></a>
+    </section>
+
+    <!-- Floating stats card -->
+    <div class="container ts-stats">
+      <div class="card blur shadow-blur">
+        <div class="row g-0">
+          <div class="col-6 col-md-3"><div class="ts-stat"><div class="ts-stat-value" data-count="2400" data-suffix="+">2,400+</div><div class="ts-stat-label">Commits</div><div class="ts-stat-sub">across the whole system</div></div></div>
+          <div class="col-6 col-md-3"><div class="ts-stat"><div class="ts-stat-value" data-count="6">6</div><div class="ts-stat-label">Integrated components</div><div class="ts-stat-sub">tag · station · truck · API · web · mobile</div></div></div>
+          <div class="col-6 col-md-3"><div class="ts-stat"><div class="ts-stat-value" data-count="11">11</div><div class="ts-stat-label">Compliance rules</div><div class="ts-stat-sub">checked automatically</div></div></div>
+          <div class="col-6 col-md-3"><div class="ts-stat"><div class="ts-stat-value" data-count="14">14</div><div class="ts-stat-label">Livestock event types</div><div class="ts-stat-sub">birth to movement to death</div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ======================= PROBLEM ======================= -->
+    <section class="ts-section" id="problem" aria-labelledby="problem-title">
+      <div class="container">
+        <div class="row g-5 align-items-stretch">
+          <div class="col-lg-5 ts-reveal">
+            <span class="ts-eyebrow">The problem</span>
+            <h2 id="problem-title" class="ts-section-title">Farmers with full paper records are still locked out of formal markets.</h2>
+            <p class="ts-section-lead">Retailers and export markets now expect each animal's origin, health records and movement history to be <strong class="text-heading">online</strong>, on platforms such as <strong class="text-heading">LITS-SA</strong> and <strong class="text-heading">RMIS</strong>. Many small and medium-scale farmers work in rural dead zones with little or no mobile signal. They keep the records but have no way to upload them.</p>
+            <p>So they sell through informal channels instead, where prices are lower, buyers are less reliable and regulatory risk is higher.</p>
+          </div>
+          <div class="col-lg-7 ts-reveal" data-delay="1">
+            <div class="ts-context">
+              <h3 class="h5 mb-4">Why it matters in South Africa</h3>
+              <div class="row g-4">
+                <div class="col-sm-6">
+                  <div class="ts-figure">40%<small>+</small></div>
+                  <p class="mb-0 mt-2">of the country's agricultural production value comes from livestock, the largest agricultural sector and a key economic driver for rural communities.</p>
+                </div>
+                <div class="col-sm-6">
+                  <div class="ts-figure">R1.2<small> bn / yr</small></div>
+                  <p class="mb-0 mt-2">lost to stock theft and disease, which often go unnoticed until it is too late.</p>
+                </div>
+              </div>
+              <hr class="my-4">
+              <p class="mb-0">The <strong class="text-white">Animal Identification Act (No. 6 of 2002)</strong> requires all cattle, sheep, goats and pigs to carry a registered brand or tattoo. Digital traceability through LITS-SA is voluntary, but major buyers treat it as essential.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4 mt-5">
+          <div class="col-md-4 ts-reveal">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-primary shadow-primary"><span class="material-symbols-rounded" aria-hidden="true">signal_cellular_nodata</span></div>
+                <h3>Traceability exclusion</h3>
+                <p>Without connectivity, records cannot reach LITS-SA or buyers' systems. A farmer can meet every legal requirement on paper and still be refused by major retailers and exporters.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 ts-reveal" data-delay="1">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-danger shadow-dark"><span class="material-symbols-rounded" aria-hidden="true">coronavirus</span></div>
+                <h3>Unmanaged herd risk</h3>
+                <p>Stock theft goes unnoticed, and diseases such as Foot-and-Mouth spread quickly because early signs like a raised body temperature are missed. Whole herds, and a family's livelihood, can be lost.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 ts-reveal" data-delay="2">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-warning shadow-dark"><span class="material-symbols-rounded" aria-hidden="true">back_hand</span></div>
+                <h3>Software not built for the field</h3>
+                <p>We also saw that farmers' larger, working hands struggle with the small controls on typical apps. A system that farmers avoid using records nothing.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="ts-cycle ts-reveal" aria-label="The cycle of exclusion">
+          <span class="ts-cycle-step">No signal</span><span class="material-symbols-rounded ts-cycle-arrow" aria-hidden="true">arrow_forward</span>
+          <span class="ts-cycle-step">No digital records</span><span class="material-symbols-rounded ts-cycle-arrow" aria-hidden="true">arrow_forward</span>
+          <span class="ts-cycle-step">No market access</span><span class="material-symbols-rounded ts-cycle-arrow" aria-hidden="true">arrow_forward</span>
+          <span class="ts-cycle-step">Lower prices &amp; unchecked losses</span><span class="material-symbols-rounded ts-cycle-arrow" aria-hidden="true">replay</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SOLUTION ======================= -->
+    <section class="ts-section ts-section-white" id="solution" aria-labelledby="solution-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">The solution</span>
+          <h2 id="solution-title" class="ts-section-title">Let the cooperative's trucks carry the data.</h2>
+          <p class="ts-section-lead">Farming cooperatives are businesses owned and run by their member farmers. Their offices sit in towns with reliable signal, and their vehicles already visit every farm. TraceStock turns that existing network into a data network: records are captured offline on the farm, picked up by passing vehicles, and uploaded automatically once a vehicle is back in coverage.</p>
+        </div>
+
+        <figure class="ts-flow-figure ts-reveal mb-5">
+          <img src="assets/img/diagrams/solution-flow.jpg" alt="Illustration: a cow with a smart ear tag sends data to a farm base station; a cooperative truck collects the data from the farm; the data reaches the farming cooperative headquarters that serves many farms." width="1800" height="600" loading="lazy">
+          <figcaption class="ts-flow-captions">
+            <div>On the animal<span>Smart ear tag reports body temperature</span></div>
+            <div>On the farm → on the road<span>Base station hands data to passing vehicles</span></div>
+            <div>At the cooperative<span>Data is uploaded and the farm stays compliant</span></div>
+          </figcaption>
+        </figure>
+
+        <div class="row g-4 mt-4">
+          <div class="col-sm-6 col-lg-3 ts-reveal">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-warning shadow-dark"><span class="material-symbols-rounded" aria-hidden="true">sell</span></div>
+                <span class="ts-pillar-num">01 · On the animal</span>
+                <h3 class="mt-1">Smart ear tags</h3>
+                <p>Identify each animal and report its body temperature over a low-power radio link, so a fever or a lost tag is spotted early.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 ts-reveal" data-delay="1">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-info shadow-info"><span class="material-symbols-rounded" aria-hidden="true">router</span></div>
+                <span class="ts-pillar-num">02 · On the farm</span>
+                <h3 class="mt-1">Base station</h3>
+                <p>A Raspberry Pi 4 that runs a full farm backend offline. It records events, raises alerts, scores compliance and serves the apps over its own secure Wi-Fi.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 ts-reveal" data-delay="2">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-primary shadow-primary"><span class="material-symbols-rounded" aria-hidden="true">local_shipping</span></div>
+                <span class="ts-pillar-num">03 · On the road</span>
+                <h3 class="mt-1">Data-mule trucks</h3>
+                <p>Cooperative vehicles fitted with a propagation node collect each farm's outbox as they pass and deliver replies back on their next visit.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-3 ts-reveal" data-delay="3">
+            <article class="ts-card ts-card-floating">
+              <div class="ts-card-body">
+                <div class="ts-icon-box bg-gradient-dark shadow-dark"><span class="material-symbols-rounded" aria-hidden="true">cloud_sync</span></div>
+                <span class="ts-pillar-num">04 · In coverage</span>
+                <h3 class="mt-1">Cooperative platform</h3>
+                <p>A cloud API, web dashboard and mobile app that turn the raw data into compliance scores, outbreak warnings, routes and traceability documents.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= HOW IT WORKS ======================= -->
+    <section class="ts-section" id="how-it-works" aria-labelledby="how-title">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 ts-reveal">
+            <span class="ts-eyebrow">How it works</span>
+            <h2 id="how-title" class="ts-section-title">One animal's data, from pasture to platform</h2>
+            <p class="ts-section-lead mb-4">Each hop is store-and-forward, so data is kept until the next link is available.</p>
+            <ol class="ts-steps">
+              <li>
+                <h3>The ear tag reports</h3>
+                <p>Every tag sends its ID and body temperature to the farm's base station on a regular interval.</p>
+              </li>
+              <li>
+                <h3>The base station acts locally</h3>
+                <p>With no internet, the Pi records the reading, checks it against health thresholds and pushes alerts to the farmer's phone in real time. Farmers and vets log treatments, dipping, movements and more against the same local database.</p>
+              </li>
+              <li>
+                <h3>A passing truck picks up the outbox</h3>
+                <p>Everything not yet synced (animals, events, readings, alerts, account changes) is bundled and handed to the cooperative vehicle's propagation node, which stores it on board.</p>
+              </li>
+              <li>
+                <h3>Upload on reaching coverage</h3>
+                <p>When the vehicle reaches signal, it uploads each farm's bundle to the TraceStock API over HTTPS using per-device credentials. The cloud applies it, re-scores compliance and checks for outbreaks.</p>
+              </li>
+              <li>
+                <h3>The reply rides back</h3>
+                <p>The API's acknowledgement, along with ID mappings, updated user accounts, outbreak warnings and the cooperative's recommendations, returns to the farm on the truck's next visit.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="col-lg-7 ts-reveal" data-delay="1">
+            <figure class="ts-arch mb-4" aria-labelledby="arch-caption">
+              <div class="ts-scroll-x" tabindex="0" aria-label="Architecture diagram, scrollable">
+              <svg viewBox="0 0 1000 450" role="img" aria-labelledby="arch-title arch-desc">
+                <title id="arch-title">TraceStock system architecture</title>
+                <desc id="arch-desc">The ear tag talks to the Raspberry Pi 4 base station. Farm phones and laptops connect to the base station over HTTPS secured by the Pi's own certificate authority. The base station exchanges data with the truck propagation node, which uploads to the cloud API over HTTPS when it reaches coverage. The web and mobile apps use the cloud API.</desc>
+                <defs>
+                  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#cfe3a6"/></marker>
+                  <marker id="arrow-gold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#ebb11a"/></marker>
+                  <linearGradient id="node-info" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5f7b2d"/><stop offset="1" stop-color="#264b22"/></linearGradient>
+                  <linearGradient id="node-brown" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#736b5e"/><stop offset="1" stop-color="#3d3220"/></linearGradient>
+                </defs>
+
+                <!-- Zones -->
+                <rect x="8" y="10" width="474" height="430" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" stroke-dasharray="5 6"/>
+                <text x="26" y="38" fill="#cfe3a6" font-size="13" font-weight="700" letter-spacing="1.5">ON THE FARM · NO SIGNAL</text>
+                <rect x="512" y="10" width="232" height="430" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" stroke-dasharray="5 6"/>
+                <text x="530" y="38" fill="#cfe3a6" font-size="13" font-weight="700" letter-spacing="1.5">ON THE ROAD</text>
+                <rect x="772" y="10" width="220" height="430" rx="18" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.14)" stroke-dasharray="5 6"/>
+                <text x="790" y="38" fill="#cfe3a6" font-size="13" font-weight="700" letter-spacing="1.5">IN COVERAGE</text>
+
+                <!-- Links -->
+                <line x1="200" y1="125" x2="276" y2="125" stroke="#cfe3a6" stroke-width="2.5" class="ts-flow-dash" marker-end="url(#arrow)"/>
+                <text x="238" y="104" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">BLE*</text>
+                <text x="238" y="152" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="middle">readings</text>
+
+                <line x1="462" y1="125" x2="534" y2="125" stroke="#cfe3a6" stroke-width="2.5" class="ts-flow-dash" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                <text x="498" y="104" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">LoRa*</text>
+                <text x="498" y="152" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="middle">bundles</text>
+
+                <line x1="724" y1="125" x2="794" y2="125" stroke="#cfe3a6" stroke-width="2.5" class="ts-flow-dash" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                <text x="759" y="104" fill="#fff" font-size="12.5" font-weight="700" text-anchor="middle">HTTPS</text>
+                <text x="759" y="152" fill="rgba(255,255,255,0.65)" font-size="11" text-anchor="middle">device key</text>
+
+                <line x1="369" y1="185" x2="369" y2="298" stroke="#ebb11a" stroke-width="2.5" marker-start="url(#arrow-gold)" marker-end="url(#arrow-gold)"/>
+                <text x="382" y="232" fill="#fff" font-size="12.5" font-weight="700">HTTPS / TLS</text>
+                <text x="382" y="250" fill="rgba(255,255,255,0.7)" font-size="11">Pi's own CA</text>
+                <text x="382" y="266" fill="rgba(255,255,255,0.7)" font-size="11">+ live alerts</text>
+
+                <line x1="886" y1="185" x2="886" y2="298" stroke="#cfe3a6" stroke-width="2.5" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+                <text x="898" y="240" fill="#fff" font-size="12.5" font-weight="700">HTTPS</text>
+                <text x="898" y="258" fill="rgba(255,255,255,0.7)" font-size="11">JWT auth</text>
+
+                <!-- Nodes -->
+                <g>
+                  <rect x="24" y="66" width="176" height="118" rx="14" fill="url(#node-brown)"/>
+                  <text x="44" y="108" font-family="Material Symbols Rounded" font-size="30" fill="#ebb11a">sell</text>
+                  <text x="44" y="140" fill="#fff" font-size="16" font-weight="700">Smart ear tag</text>
+                  <text x="44" y="162" fill="rgba(255,255,255,0.7)" font-size="12">per animal</text>
+                </g>
+                <g>
+                  <rect x="278" y="66" width="184" height="118" rx="14" fill="url(#node-info)"/>
+                  <text x="298" y="108" font-family="Material Symbols Rounded" font-size="30" fill="#fff">router</text>
+                  <text x="298" y="140" fill="#fff" font-size="16" font-weight="700">Base station</text>
+                  <text x="298" y="162" fill="rgba(255,255,255,0.75)" font-size="12">Raspberry Pi 4 · SQLite</text>
+                </g>
+                <g>
+                  <rect x="278" y="300" width="184" height="118" rx="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)"/>
+                  <text x="298" y="342" font-family="Material Symbols Rounded" font-size="30" fill="#fff">smartphone</text>
+                  <text x="298" y="374" fill="#fff" font-size="16" font-weight="700">Farm devices</text>
+                  <text x="298" y="396" fill="rgba(255,255,255,0.7)" font-size="12">farmer &amp; vet apps</text>
+                </g>
+                <g>
+                  <rect x="536" y="66" width="188" height="118" rx="14" fill="url(#node-brown)"/>
+                  <text x="556" y="108" font-family="Material Symbols Rounded" font-size="30" fill="#fff">local_shipping</text>
+                  <text x="556" y="140" fill="#fff" font-size="16" font-weight="700">Truck node</text>
+                  <text x="556" y="162" fill="rgba(255,255,255,0.7)" font-size="12">on-board queue</text>
+                </g>
+                <g>
+                  <rect x="796" y="66" width="180" height="118" rx="14" fill="url(#node-info)"/>
+                  <text x="816" y="108" font-family="Material Symbols Rounded" font-size="30" fill="#fff">cloud</text>
+                  <text x="816" y="140" fill="#fff" font-size="16" font-weight="700">Cloud API</text>
+                  <text x="816" y="162" fill="rgba(255,255,255,0.75)" font-size="12">Spring Boot · PostgreSQL</text>
+                </g>
+                <g>
+                  <rect x="796" y="300" width="180" height="118" rx="14" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.25)"/>
+                  <text x="816" y="342" font-family="Material Symbols Rounded" font-size="30" fill="#fff">dashboard</text>
+                  <text x="816" y="374" fill="#fff" font-size="16" font-weight="700">Web &amp; mobile</text>
+                  <text x="816" y="396" fill="rgba(255,255,255,0.7)" font-size="12">5 user roles</text>
+                </g>
+                <!-- Offline-first farm note -->
+                <text x="26" y="300" fill="rgba(255,255,255,0.85)" font-size="13" font-weight="700">Works fully offline</text>
+                <text x="26" y="320" fill="rgba(255,255,255,0.6)" font-size="11.5">alerts · events · compliance</text>
+                <text x="26" y="338" fill="rgba(255,255,255,0.6)" font-size="11.5">login · reports</text>
+              </svg>
+              </div>
+              <p class="ts-scroll-hint"><span class="material-symbols-rounded" aria-hidden="true">swipe</span>Swipe to see the full diagram</p>
+              <div class="ts-arch-legend">
+                <span><i class="lg-radio"></i>Store-and-forward radio hop</span>
+                <span><i class="lg-tls"></i>Encrypted local Wi-Fi</span>
+                <span><i class="lg-net"></i>Internet (when available)</span>
+              </div>
+              <figcaption id="arch-caption" class="ts-arch-note">* The production design uses BLE ear tags and LoRa(WAN) radios. In this prototype both radio hops are emulated over an MQTT broker, while the base station runs on real Raspberry Pi 4 hardware.</figcaption>
+            </figure>
+
+            <div class="ts-callout">
+              <h3><span class="material-symbols-rounded text-info me-1" aria-hidden="true">verified</span>Nothing lost, nothing counted twice</h3>
+              <p class="mb-0">Sync is acknowledgement-based. The farm clears a record only after the cloud confirms it was applied. Anything unconfirmed is resent with the next truck, and the cloud de-duplicates animals by ear tag. Records created offline get local IDs that the cloud maps to permanent ones.</p>
+              <div class="ts-sync-strip">
+                <div><strong>Outbox</strong>Unsynced rows are bundled, readings in chunks of 2,000</div>
+                <div><strong>Carry</strong>The truck keeps the latest bundle per farm</div>
+                <div><strong>Apply</strong>The cloud applies the bundle and returns applied IDs and ID maps</div>
+                <div><strong>Ack</strong>The farm marks only the confirmed rows as synced</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= FEATURES BY ROLE ======================= -->
+    <section class="ts-section ts-section-white" id="features" aria-labelledby="features-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">Features</span>
+          <h2 id="features-title" class="ts-section-title">Built for everyone in the supply chain</h2>
+          <p class="ts-section-lead">Five roles share one system. Each role sees only what it needs, on a web dashboard, an Android app, or both.</p>
+        </div>
+
+        <div class="d-flex justify-content-center mb-4 ts-reveal">
+          <ul class="nav ts-pills" id="roleTabs" role="tablist">
+            <li class="nav-item" role="presentation"><button class="nav-link active" id="tab-farmer" data-bs-toggle="pill" data-bs-target="#role-farmer" type="button" role="tab" aria-controls="role-farmer" aria-selected="true"><span class="material-symbols-rounded" aria-hidden="true">agriculture</span>Farmer</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="tab-manager" data-bs-toggle="pill" data-bs-target="#role-manager" type="button" role="tab" aria-controls="role-manager" aria-selected="false"><span class="material-symbols-rounded" aria-hidden="true">insights</span>Cooperative manager</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="tab-tech" data-bs-toggle="pill" data-bs-target="#role-tech" type="button" role="tab" aria-controls="role-tech" aria-selected="false"><span class="material-symbols-rounded" aria-hidden="true">build</span>Technician</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="tab-vet" data-bs-toggle="pill" data-bs-target="#role-vet" type="button" role="tab" aria-controls="role-vet" aria-selected="false"><span class="material-symbols-rounded" aria-hidden="true">stethoscope</span>Vet</button></li>
+            <li class="nav-item" role="presentation"><button class="nav-link" id="tab-driver" data-bs-toggle="pill" data-bs-target="#role-driver" type="button" role="tab" aria-controls="role-driver" aria-selected="false"><span class="material-symbols-rounded" aria-hidden="true">local_shipping</span>Truck driver</button></li>
+          </ul>
+        </div>
+
+        <div class="tab-content ts-reveal">
+          <!-- Farmer -->
+          <div class="tab-pane fade show active" id="role-farmer" role="tabpanel" aria-labelledby="tab-farmer" tabindex="0">
+            <div class="ts-role-panel">
+              <div class="row g-4">
+                <div class="col-lg-7">
+                  <div class="ts-role-meta"><span class="ts-badge ts-badge-info">Android app</span><span class="ts-badge ts-badge-info">Web</span><span class="ts-badge ts-badge-primary">Works offline</span></div>
+                  <h3>Keep a compliant herd without leaving the farm</h3>
+                  <ul class="ts-checklist mt-3">
+                    <li><strong>Herd register</strong> with filters by species, age and status, plus a full event timeline for every animal.</li>
+                    <li><strong>Record 14 event types</strong>: birth, death, retirement, acquisition, vaccination, treatment, vet visit, vital signs and weight, dipping, branding, tattooing, ear tagging, quarantine and movement.</li>
+                    <li><strong>Real-time alerts</strong> for fever, possible tag detachment or a silent tag, delivered as phone notifications by the base station with no internet needed.</li>
+                    <li><strong>Compliance at a glance</strong>: outstanding issues, a confidence score and recommendations from the cooperative.</li>
+                    <li><strong>One-tap traceability record</strong>: a PDF covering owner, identification, event history, permits and declarations, referencing the Animal Identification, Stock Theft, Animal Diseases and Meat Safety Acts.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-5">
+                  <div class="ts-role-side">
+                    <h4>Designed for the field</h4>
+                    <p>The app tries the farm's base station first and falls back to the cloud, so farmers log in and work the same way online or off.</p>
+                    <p class="mb-0">Large, full-width controls and bigger type on tablets make it usable with working hands, which addresses a problem we identified at the start of the project.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Manager -->
+          <div class="tab-pane fade" id="role-manager" role="tabpanel" aria-labelledby="tab-manager" tabindex="0">
+            <div class="ts-role-panel">
+              <div class="row g-4">
+                <div class="col-lg-7">
+                  <div class="ts-role-meta"><span class="ts-badge ts-badge-info">Web dashboard</span></div>
+                  <h3>See every member farm from the cooperative office</h3>
+                  <ul class="ts-checklist mt-3">
+                    <li><strong>Cooperative dashboard</strong>: non-compliance breakdown by rule, active alerts and confidence per farm, average alert response time, herd population trends and the three farms most in need of attention.</li>
+                    <li><strong>"Sync now"</strong> pulls whatever the vehicles are carrying and shows each farm's score before and after, with new and resolved violations.</li>
+                    <li><strong>Farm compliance</strong>: review scores, send written recommendations that reach the farm by truck, and suspend or reactivate farms.</li>
+                    <li><strong>Disease monitoring map</strong> with 3 km and 10 km risk rings around outbreak farms.</li>
+                    <li><strong>Route planner</strong>: assign each driver an ordered list of farm stops for the day, using each farm's last sync time.</li>
+                    <li><strong>Staff approvals and reporting</strong>: approve drivers and managers, and export a farm compliance and monitoring report as a PDF.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-5">
+                  <div class="ts-role-side">
+                    <h4>Data-driven oversight</h4>
+                    <p>Statistical analysis highlights outliers. Farms that resolve alerts unusually slowly, or suspiciously quickly, are flagged using z-scores across the cooperative.</p>
+                    <p class="mb-0">Alert recurrence is compared to the cooperative average, so repeat problems surface early.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Technician -->
+          <div class="tab-pane fade" id="role-tech" role="tabpanel" aria-labelledby="tab-tech" tabindex="0">
+            <div class="ts-role-panel">
+              <div class="row g-4">
+                <div class="col-lg-7">
+                  <div class="ts-role-meta"><span class="ts-badge ts-badge-info">Web dashboard</span></div>
+                  <h3>Onboard cooperatives, farms and hardware</h3>
+                  <ul class="ts-checklist mt-3">
+                    <li><strong>Set up the hierarchy</strong> from cooperative to farmer to farm, with address search to place each farm.</li>
+                    <li><strong>Draw farm boundaries</strong> on satellite imagery. The geofence's area in hectares is calculated automatically.</li>
+                    <li><strong>Node registry</strong>: register base stations, static relay nodes and truck nodes, including hardware model and radio settings.</li>
+                    <li><strong>One-click provisioning</strong>: download a configuration bundle with the device's LoRaWAN-style identity, radio plan and a generated SQLite script that bootstraps the farm's base station.</li>
+                    <li><strong>Setup dashboard</strong> showing farms that need setup, nodes waiting to sync and nodes silent for over 7 days.</li>
+                    <li><strong>Vet registry</strong> and approval of new cooperative managers.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-5">
+                  <div class="ts-role-side">
+                    <h4>Provisioning, done once</h4>
+                    <p class="mb-0">Every device gets cryptographically random keys at registration. The truck uses them to authenticate its uploads, and each base station gets its own secret for signing offline sessions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vet -->
+          <div class="tab-pane fade" id="role-vet" role="tabpanel" aria-labelledby="tab-vet" tabindex="0">
+            <div class="ts-role-panel">
+              <div class="row g-4">
+                <div class="col-lg-7">
+                  <div class="ts-role-meta"><span class="ts-badge ts-badge-info">Android app</span><span class="ts-badge ts-badge-primary">Works offline</span></div>
+                  <h3>Treat any animal, on any member farm</h3>
+                  <ul class="ts-checklist mt-3">
+                    <li><strong>Consult mode</strong>: look up an animal and record vaccinations, treatments, vet visits, vital signs and quarantines.</li>
+                    <li><strong>Follow-up tracking</strong>: medicated events carry a next-due date, and missed follow-ups appear as compliance issues.</li>
+                    <li><strong>Fever response</strong>: a temperature spike needs a vet visit within 48 hours, otherwise the farm loses compliance points.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-5">
+                  <div class="ts-role-side">
+                    <h4>Offline login, anywhere</h4>
+                    <p class="mb-0">The vet roster, including securely hashed credentials, is pushed to every base station. A vet can sign in on any member farm even though neither the farm nor the vet has signal.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Driver -->
+          <div class="tab-pane fade" id="role-driver" role="tabpanel" aria-labelledby="tab-driver" tabindex="0">
+            <div class="ts-role-panel">
+              <div class="row g-4">
+                <div class="col-lg-7">
+                  <div class="ts-role-meta"><span class="ts-badge ts-badge-info">Android app</span></div>
+                  <h3>Drive the route, and the data travels with you</h3>
+                  <ul class="ts-checklist mt-3">
+                    <li><strong>Apply in the app</strong> with a driver's licence and selfie, then get approved by the cooperative manager.</li>
+                    <li><strong>Today's route</strong> on a map with turn-by-turn road geometry, downloadable for use out of signal.</li>
+                    <li><strong>No extra work</strong>: the propagation node in the vehicle syncs each farm automatically as the truck passes.</li>
+                  </ul>
+                </div>
+                <div class="col-lg-5">
+                  <div class="ts-role-side">
+                    <h4>Uses what's already there</h4>
+                    <p class="mb-0">Cooperative trucks and shared machinery already travel between farms. TraceStock gets a data network from those trips with no new cellular infrastructure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ENGINEERING ======================= -->
+    <section class="ts-section" id="engineering" aria-labelledby="engineering-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">Under the hood</span>
+          <h2 id="engineering-title" class="ts-section-title">Engineering highlights</h2>
+          <p class="ts-section-lead">TraceStock is a distributed system built to stay correct while parts of it are offline for days.</p>
+        </div>
+
+        <!-- Secure farm hub -->
+        <div class="ts-secure mb-5 ts-reveal">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <span class="ts-eyebrow on-dark">Secure farm hub</span>
+              <h3>A Raspberry Pi 4 with its own certificate authority</h3>
+              <p>The base station is real hardware: a Raspberry Pi 4 running the farm's backend in Docker and serving it over its own Wi-Fi hotspot. There is no internet to reach a public certificate authority, so <strong>the Pi has its own CA</strong>.</p>
+              <ul class="ts-checklist mt-3 mb-0">
+                <li><strong>TLS everywhere on the farm</strong>: the apps talk to the Pi over HTTPS and receive live alerts over a secure WebSocket.</li>
+                <li><strong>Trusted devices</strong>: the CA certificate is installed on farmers' and vets' devices, so they can verify the base station.</li>
+                <li><strong>Offline sign-in</strong>: credentials synced from the cloud and stored as BCrypt hashes, with JWT sessions that can be revoked.</li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <div class="ts-secure-diagram">
+                <div class="ts-scroll-x" tabindex="0" aria-label="Certificate diagram, scrollable">
+                <svg viewBox="0 0 460 300" role="img" aria-labelledby="ca-title">
+                  <title id="ca-title">The TraceStock BaseStation CA signs the Pi's server certificate; devices that trust the CA connect over HTTPS.</title>
+                  <rect x="140" y="12" width="180" height="70" rx="12" fill="rgba(235,177,26,0.18)" stroke="#ebb11a"/>
+                  <text x="230" y="40" fill="#fff" font-size="14" font-weight="700" text-anchor="middle">TraceStock BaseStation CA</text>
+                  <text x="230" y="62" fill="rgba(255,255,255,0.7)" font-size="12" text-anchor="middle">root of trust</text>
+                  <line x1="190" y1="82" x2="120" y2="150" stroke="#ebb11a" stroke-width="2" stroke-dasharray="5 5"/>
+                  <line x1="270" y1="82" x2="340" y2="150" stroke="#ebb11a" stroke-width="2" stroke-dasharray="5 5"/>
+                  <text x="128" y="118" fill="rgba(255,255,255,0.75)" font-size="11.5" text-anchor="end">signs</text>
+                  <text x="332" y="118" fill="rgba(255,255,255,0.75)" font-size="11.5">installed on</text>
+                  <rect x="20" y="150" width="200" height="90" rx="12" fill="rgba(95,123,45,0.55)" stroke="rgba(207,227,166,0.6)"/>
+                  <text x="40" y="184" font-family="Material Symbols Rounded" font-size="26" fill="#fff">router</text>
+                  <text x="74" y="182" fill="#fff" font-size="14" font-weight="700">Raspberry Pi 4</text>
+                  <text x="40" y="208" fill="rgba(255,255,255,0.75)" font-size="12">server certificate</text>
+                  <text x="40" y="226" fill="rgba(255,255,255,0.75)" font-size="12">farm API · alerts</text>
+                  <rect x="240" y="150" width="200" height="90" rx="12" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.3)"/>
+                  <text x="260" y="184" font-family="Material Symbols Rounded" font-size="26" fill="#fff">smartphone</text>
+                  <text x="294" y="182" fill="#fff" font-size="14" font-weight="700">Farm devices</text>
+                  <text x="260" y="208" fill="rgba(255,255,255,0.75)" font-size="12">trust the farm CA</text>
+                  <text x="260" y="226" fill="rgba(255,255,255,0.75)" font-size="12">farmer · vet</text>
+                  <line x1="220" y1="270" x2="240" y2="270" stroke="#cfe3a6" stroke-width="2"/>
+                  <path d="M120 240 V270 H340 V240" fill="none" stroke="#cfe3a6" stroke-width="2.5"/>
+                  <rect x="168" y="257" width="124" height="26" rx="13" fill="#264b22" stroke="#cfe3a6"/>
+                  <text x="190" y="275" font-family="Material Symbols Rounded" font-size="16" fill="#cfe3a6">lock</text>
+                  <text x="210" y="275" fill="#fff" font-size="12" font-weight="700">HTTPS / WSS</text>
+                </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <!-- Compliance engine -->
+          <div class="col-lg-6 ts-reveal">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-feature">
+                  <div class="ts-icon-box ts-icon-box-sm bg-gradient-info shadow-info"><span class="material-symbols-rounded" aria-hidden="true">rule</span></div>
+                  <div>
+                    <h3>An 11-rule compliance engine, online and offline</h3>
+                    <p>The same rule engine runs in the cloud and on every base station. It checks each animal against South African practice, including species vaccination schedules (FMD, Anthrax, Lumpy Skin, Bluetongue, Pulpy Kidney and more), 14-day dipping and branding deadlines. Each farm gets a <strong class="text-heading">confidence score out of 100</strong> that drops with each rule broken and recovers gradually once the issue is fixed.</p>
+                    <details class="ts-details">
+                      <summary>View the rules <span class="material-symbols-rounded" aria-hidden="true">expand_more</span></summary>
+                      <div class="table-wrap">
+                        <table class="ts-rules">
+                          <thead><tr><th scope="col">Rule</th><th scope="col">What it checks</th><th scope="col">Score impact</th></tr></thead>
+                          <tbody>
+                            <tr><td>01</td><td>Vaccinations follow the species' age-based and annual schedule</td><td>Flag</td></tr>
+                            <tr><td>02</td><td>Dipping at least every 14 days</td><td>−10</td></tr>
+                            <tr><td>03</td><td>Brand or tattoo within 3 days of birth (14 after acquisition)</td><td>−10</td></tr>
+                            <tr><td>04</td><td>Every farm-to-farm move has a matching movement record</td><td>−15</td></tr>
+                            <tr><td>05</td><td>A temperature spike is followed by a vet visit within 48 h</td><td>−15</td></tr>
+                            <tr><td>06</td><td>Medical follow-ups happen before their due date</td><td>−8</td></tr>
+                            <tr><td>07</td><td>Quarantine is logged when it is required</td><td>−15</td></tr>
+                            <tr><td>08</td><td>No ear tag is silent for more than 24 h</td><td>−10</td></tr>
+                            <tr><td>09</td><td>Deaths are reported with a cause</td><td>−10</td></tr>
+                            <tr><td>10</td><td>Vitals and weight are less than 30 days old</td><td>−3</td></tr>
+                            <tr><td>11</td><td>Acquired animals have complete details</td><td>−2</td></tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Outbreak radar -->
+          <div class="col-lg-6 ts-reveal" data-delay="1">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="row g-3 align-items-center">
+                  <div class="col-sm-7">
+                    <div class="ts-feature">
+                      <div class="ts-icon-box ts-icon-box-sm bg-gradient-danger shadow-dark"><span class="material-symbols-rounded" aria-hidden="true">radar</span></div>
+                      <div>
+                        <h3>Outbreak early warning</h3>
+                        <p>When <strong class="text-heading">15% or more</strong> of a farm's herd is in quarantine, the farm is treated as an outbreak. Every farm within <strong class="text-heading">10 km</strong> gets a warning, upgraded to <strong class="text-heading">immediate danger</strong> within 3 km. The warnings reach those farms on the next truck, even if they have no signal.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-5">
+                    <svg class="ts-radar" viewBox="0 0 200 200" role="img" aria-labelledby="radar-title">
+                      <title id="radar-title">Risk rings: 3 km immediate danger and 10 km slight risk around an outbreak farm</title>
+                      <circle cx="100" cy="100" r="94" fill="rgba(251,140,0,0.12)" stroke="#fb8c00" stroke-width="2" stroke-dasharray="4 4"/>
+                      <circle cx="100" cy="100" r="36" fill="rgba(244,67,53,0.18)" stroke="#f44335" stroke-width="2"/>
+                      <circle cx="100" cy="100" r="7" fill="#f44335"/>
+                      <circle cx="122" cy="80" r="5" fill="#344767"/>
+                      <circle cx="40" cy="70" r="5" fill="#344767"/>
+                      <circle cx="150" cy="150" r="5" fill="#344767"/>
+                      <circle cx="70" cy="160" r="5" fill="#344767"/>
+                      <text x="100" y="58" font-size="11" fill="#c0160b" text-anchor="middle" font-weight="700">3 km</text>
+                      <text x="100" y="20" font-size="11" fill="#c87000" text-anchor="middle" font-weight="700">10 km</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Health alerts -->
+          <div class="col-lg-6 ts-reveal">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-feature">
+                  <div class="ts-icon-box ts-icon-box-sm bg-gradient-warning shadow-dark"><span class="material-symbols-rounded" aria-hidden="true">device_thermostat</span></div>
+                  <div class="flex-grow-1">
+                    <h3>Real-time health alerts with no internet</h3>
+                    <p>The base station checks every reading as it arrives and pushes alerts straight to farm devices:</p>
+                    <div class="ts-kv">
+                      <span class="ts-badge ts-badge-error">Fever &gt; 39.5 °C</span>
+                      <span class="ts-badge ts-badge-warning">Drop ≥ 5 °C · tag detached?</span>
+                      <span class="ts-badge ts-badge-primary">Tag gone silent</span>
+                    </div>
+                    <div class="ts-thermo" aria-hidden="true">
+                      <span class="t-low"></span>
+                      <span class="t-ok"></span>
+                      <span class="t-high"></span>
+                    </div>
+                    <div class="ts-thermo-scale" aria-hidden="true"><span>34 °C</span><span>37.9</span><span>39.5</span><span>42 °C</span></div>
+                    <p class="mt-3 mb-0 small">Fever alerts include quarantine advice. Duplicate alerts are suppressed, and each tag's typical reporting interval is learned with a moving average.</p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PDF transfer -->
+          <div class="col-lg-6 ts-reveal" data-delay="1">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-feature">
+                  <div class="ts-icon-box ts-icon-box-sm bg-gradient-primary shadow-primary"><span class="material-symbols-rounded" aria-hidden="true">picture_as_pdf</span></div>
+                  <div>
+                    <h3>A traceability PDF that carries the animal's data</h3>
+                    <p>When an animal is sold, the seller's traceability record has the animal's full details and history embedded as compressed, machine-readable data inside the PDF. The buyer uploads that PDF, and TraceStock fills in the new animal's profile and history automatically and validates it, even on a base station with no signal.</p>
+                    <div class="ts-kv"><span class="ts-badge ts-badge-info">GZIP + Base64</span><span class="ts-badge ts-badge-info">PDF metadata</span><span class="ts-badge ts-badge-info">Farm-to-farm transfer</span></div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- Provisioning -->
+          <div class="col-md-6 col-lg-4 ts-reveal">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-icon-box ts-icon-box-sm bg-gradient-dark shadow-dark mb-3"><span class="material-symbols-rounded" aria-hidden="true">settings_input_antenna</span></div>
+                <h3>LoRaWAN-style provisioning</h3>
+                <p>Each node is issued a DevEUI, JoinEUI and 128-bit app and network keys, plus a radio plan (EU868, spreading factor SF7 to SF10, transmit power and adaptive data rate) tuned to its role: base station, static relay or truck.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Security -->
+          <div class="col-md-6 col-lg-4 ts-reveal" data-delay="1">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-icon-box ts-icon-box-sm bg-gradient-info shadow-info mb-3"><span class="material-symbols-rounded" aria-hidden="true">shield_lock</span></div>
+                <h3>Security by design</h3>
+                <p>Stateless JWT authentication with server-side revocation, so logging out actually ends a session. Five role-based permission levels, BCrypt passwords with strong-password rules, forced reset of default passwords, and single-use reset links that expire after 30 minutes.</p>
+              </div>
+            </article>
+          </div>
+
+          <!-- Deployment -->
+          <div class="col-md-12 col-lg-4 ts-reveal" data-delay="2">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-icon-box ts-icon-box-sm bg-gradient-secondary shadow-dark mb-3"><span class="material-symbols-rounded" aria-hidden="true">deployed_code</span></div>
+                <h3>Containerised end to end</h3>
+                <p>Every component ships as a Docker image. The farm stack is cross-compiled to arm64 for the Raspberry Pi. SQLite on the edge is tuned for reliability (write-ahead logging, a single writer), and the cloud runs on PostgreSQL.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= HARDWARE TIERS ======================= -->
+    <section class="ts-section ts-section-white" id="tiers" aria-labelledby="tiers-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">Affordable by design</span>
+          <h2 id="tiers-title" class="ts-section-title">Start small, grow over time</h2>
+          <p class="ts-section-lead">Farms join at the level they can afford and add hardware as they go.</p>
+        </div>
+        <div class="row g-4 pt-4">
+          <div class="col-md-4 ts-tier ts-reveal">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-tier-head bg-gradient-secondary">
+                  <span class="ts-tier-level">Tier 1</span>
+                  <h3>Entry</h3>
+                  <div class="ts-tier-cost" aria-label="Lowest cost"><i class="on"></i><i></i><i></i></div>
+                </div>
+                <ul class="ts-checklist">
+                  <li>Lowest cost</li>
+                  <li>No ear tags required, so events are recorded in the app</li>
+                  <li>At least one base station</li>
+                  <li>One vehicle propagation node</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 ts-tier featured ts-reveal" data-delay="1">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-tier-head bg-gradient-info">
+                  <span class="ts-tier-level">Tier 2</span>
+                  <h3>Standard</h3>
+                  <div class="ts-tier-cost" aria-label="Medium cost"><i class="on"></i><i class="on"></i><i></i></div>
+                </div>
+                <ul class="ts-checklist">
+                  <li>Bluetooth smart ear tags on animals</li>
+                  <li>One base station</li>
+                  <li>One vehicle propagation node</li>
+                  <li>Any combination between tiers 1 and 3</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4 ts-tier ts-reveal" data-delay="2">
+            <article class="ts-card">
+              <div class="ts-card-body">
+                <div class="ts-tier-head bg-gradient-primary">
+                  <span class="ts-tier-level">Tier 3</span>
+                  <h3>Full coverage</h3>
+                  <div class="ts-tier-cost" aria-label="Highest cost"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+                </div>
+                <ul class="ts-checklist">
+                  <li>Bluetooth smart ear tags on animals</li>
+                  <li>Automated weighbridge and dip scanning</li>
+                  <li>Multiple base stations and relay nodes on the farm</li>
+                  <li>Propagation nodes across the vehicle fleet</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="text-center mt-4 mb-0 small ts-reveal">The tiers are reference points, not fixed packages. Any combination in between is supported.</p>
+      </div>
+    </section>
+
+    <!-- ======================= PRODUCT TOUR ======================= -->
+    <section class="ts-section" id="tour" aria-labelledby="tour-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">Product tour</span>
+          <h2 id="tour-title" class="ts-section-title">One platform, on every screen</h2>
+          <p class="ts-section-lead">A cooperative dashboard for the office, and a rugged Android app for the farm and the road.</p>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-8 ts-reveal">
+            <div class="ts-browser">
+              <div class="ts-browser-bar"><i></i><i></i><i></i><span>TraceStock · Cooperative dashboard</span></div>
+              <div class="ts-shot" data-src="assets/img/screens/web-manager-dashboard.png" data-alt="TraceStock cooperative manager dashboard">
+                <div class="ts-shot-placeholder"><span class="material-symbols-rounded" aria-hidden="true">dashboard</span><strong>Cooperative dashboard</strong>Screenshot coming soon</div>
+              </div>
+            </div>
+            <p class="ts-tour-caption"><strong>Cooperative manager dashboard</strong>Compliance, alerts, response times and herd trends across every member farm.</p>
+          </div>
+          <div class="col-lg-4 ts-reveal" data-delay="1">
+            <div class="ts-phone">
+              <div class="ts-shot" data-src="assets/img/screens/mobile-farmer-home.png" data-alt="TraceStock farmer home screen on Android">
+                <div class="ts-shot-placeholder"><span class="material-symbols-rounded" aria-hidden="true">smartphone</span><strong>Farmer app</strong>Screenshot coming soon</div>
+              </div>
+            </div>
+            <p class="ts-tour-caption"><strong>Farmer app</strong>Herd, alerts and record-keeping, online or off.</p>
+          </div>
+          <div class="col-lg-4 order-lg-1 order-2 ts-reveal">
+            <div class="ts-phone">
+              <div class="ts-shot" data-src="assets/img/screens/mobile-driver-route.png" data-alt="TraceStock driver route screen on Android">
+                <div class="ts-shot-placeholder"><span class="material-symbols-rounded" aria-hidden="true">route</span><strong>Driver route</strong>Screenshot coming soon</div>
+              </div>
+            </div>
+            <p class="ts-tour-caption"><strong>Driver app</strong>Today's farm stops, downloadable for offline use.</p>
+          </div>
+          <div class="col-lg-8 order-lg-2 order-1 ts-reveal" data-delay="1">
+            <div class="ts-browser">
+              <div class="ts-browser-bar"><i></i><i></i><i></i><span>TraceStock · Disease monitoring</span></div>
+              <div class="ts-shot" data-src="assets/img/screens/web-disease-monitoring.png" data-alt="TraceStock disease monitoring map with outbreak risk rings">
+                <div class="ts-shot-placeholder"><span class="material-symbols-rounded" aria-hidden="true">map</span><strong>Disease monitoring map</strong>Screenshot coming soon</div>
+              </div>
+            </div>
+            <p class="ts-tour-caption"><strong>Disease monitoring</strong>Outbreak farms with 3 km and 10 km risk rings.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TECH STACK ======================= -->
+    <section class="ts-section ts-section-white" id="tech" aria-labelledby="tech-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">Technology</span>
+          <h2 id="tech-title" class="ts-section-title">The stack behind TraceStock</h2>
+          <p class="ts-section-lead">Open technologies across the device, backend, mobile and mapping layers.</p>
+          <p class="ts-tech-legend mt-2 mb-0"><span class="material-symbols-rounded" aria-hidden="true">star</span>Featured in our Projects Day presentation</p>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-info"><span class="material-symbols-rounded" aria-hidden="true">web</span></span>Web application</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/react.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">React 18<span class="ts-tech-role">Dashboard UI</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/typescript.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">TypeScript<span class="ts-tech-role">Type-safe front end</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/mui.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Material UI<span class="ts-tech-role">Material Dashboard 2</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/chartdotjs.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Chart.js<span class="ts-tech-role">Analytics charts</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">RC</span></span><span class="ts-tech-name">Recharts<span class="ts-tech-role">Trend visualisation</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">PDF</span></span><span class="ts-tech-name">jsPDF &amp; pdf-lib<span class="ts-tech-role">Traceability records</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">GZ</span></span><span class="ts-tech-name">pako<span class="ts-tech-role">Transfer compression</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">IDB</span></span><span class="ts-tech-name">IndexedDB<span class="ts-tech-role">Offline cache</span></span></div>
+          </div>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-info"><span class="material-symbols-rounded" aria-hidden="true">smartphone</span></span>Mobile application</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/react.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">React Native<span class="ts-tech-role">Cross-platform app</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/expo.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Expo SDK 54<span class="ts-tech-role">Build &amp; routing</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/android.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Android<span class="ts-tech-role">Target platform</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/realm.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Realm<span class="ts-tech-role">Offline data store</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/reactquery.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">TanStack Query<span class="ts-tech-role">Server state</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">J</span></span><span class="ts-tech-name">Jotai<span class="ts-tech-role">App state</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">WS</span></span><span class="ts-tech-name">STOMP over WebSocket<span class="ts-tech-role">Live farm alerts</span></span></div>
+          </div>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-primary"><span class="material-symbols-rounded" aria-hidden="true">dns</span></span>Backend &amp; API</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/openjdk.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Java 21<span class="ts-tech-role">All server components</span></span></div>
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/springboot.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Spring Boot 4<span class="ts-tech-role">REST API &amp; edge services</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/springsecurity.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Spring Security<span class="ts-tech-role">Role-based access</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/jsonwebtokens.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">JSON Web Tokens<span class="ts-tech-role">Revocable sessions</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/hibernate.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">JPA / Hibernate<span class="ts-tech-role">Persistence</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">jQ</span></span><span class="ts-tech-name">jOOQ<span class="ts-tech-role">Typed SQL seeding</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">DF</span></span><span class="ts-tech-name">Datafaker<span class="ts-tech-role">Realistic demo data</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/apachemaven.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Maven<span class="ts-tech-role">Build tooling</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">@</span></span><span class="ts-tech-name">Spring Mail<span class="ts-tech-role">Async HTML email</span></span></div>
+          </div>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-primary"><span class="material-symbols-rounded" aria-hidden="true">database</span></span>Data</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/postgresql.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">PostgreSQL 16<span class="ts-tech-role">Cloud database</span></span></div>
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/sqlite.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">SQLite<span class="ts-tech-role">Base station &amp; truck</span></span></div>
+          </div>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-dark"><span class="material-symbols-rounded" aria-hidden="true">sensors</span></span>IoT &amp; edge</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/raspberrypi.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Raspberry Pi 4<span class="ts-tech-role">Base station hardware</span></span></div>
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/eclipsemosquitto.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Eclipse Mosquitto<span class="ts-tech-role">MQTT broker</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/mqtt.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">MQTT · Eclipse Paho<span class="ts-tech-role">Device messaging</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">LoRa</span></span><span class="ts-tech-name">LoRaWAN<span class="ts-tech-role">Device identity &amp; radio plan</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/bluetooth.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Bluetooth LE<span class="ts-tech-role">Ear tag link</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">TLS</span></span><span class="ts-tech-name">TLS &amp; private CA<span class="ts-tech-role">Secure farm Wi-Fi</span></span></div>
+          </div>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-info"><span class="material-symbols-rounded" aria-hidden="true">public</span></span>Maps &amp; geospatial</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/mapbox.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Mapbox<span class="ts-tech-role">Satellite &amp; geofencing</span></span></div>
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/openstreetmap.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">OpenStreetMap<span class="ts-tech-role">Open map data</span></span></div>
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/googlemaps.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Google Maps<span class="ts-tech-role">Driver map</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/maplibre.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">MapLibre GL<span class="ts-tech-role">Outbreak map</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">T</span></span><span class="ts-tech-name">Turf.js<span class="ts-tech-role">Geofence area</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">OSRM</span></span><span class="ts-tech-name">OSRM<span class="ts-tech-role">Road routing</span></span></div>
+          </div>
+        </div>
+
+        <div class="ts-tech-group ts-reveal">
+          <h3 class="ts-tech-group-title"><span class="ts-icon-box bg-gradient-dark"><span class="material-symbols-rounded" aria-hidden="true">deployed_code</span></span>DevOps &amp; delivery</h3>
+          <div class="ts-tech-grid">
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/docker.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">Docker<span class="ts-tech-role">Every component</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><span class="ts-tech-mono">arm</span></span><span class="ts-tech-name">Docker Buildx<span class="ts-tech-role">arm64 images for the Pi</span></span></div>
+            <div class="ts-tech presented"><span class="ts-tech-logo"><img src="assets/img/tech/ngrok.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">ngrok<span class="ts-tech-role">Secure tunnels</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/nginx.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">nginx<span class="ts-tech-role">Web hosting</span></span></div>
+            <div class="ts-tech"><span class="ts-tech-logo"><img src="assets/img/tech/githubactions.svg" alt="" width="28" height="28"></span><span class="ts-tech-name">GitHub Actions<span class="ts-tech-role">Automated APK builds</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TEAM ======================= -->
+    <section class="ts-section" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="text-center mb-5 ts-reveal">
+          <span class="ts-eyebrow">Team Nexus · Team 67</span>
+          <h2 id="team-title" class="ts-section-title">Meet the team</h2>
+          <p class="ts-section-lead">Four final-year students who designed and built every part of TraceStock: the hardware, the cloud, and the web and mobile apps.</p>
+        </div>
+        <div class="row g-4 pt-4" id="team-grid">
+          <noscript>
+            <div class="col-12 text-center"><p>Brody Griffin · Itumeleng Morena · Zwoitwaho Murovhi · Kamogelo Kedige</p></div>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= CONTACT ======================= -->
+    <section class="ts-section ts-contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6 ts-reveal">
+            <span class="ts-eyebrow on-dark">Connect with us</span>
+            <h2 id="contact-title" class="ts-section-title">Let's talk about TraceStock</h2>
+            <p class="ts-section-lead mb-4">Whether you're interested in AgriTech, IoT, offline-first systems or the people who built one, we'd like to hear from you. Come and see the live demo, or get in touch with any of us directly.</p>
+            <div id="contact-email" class="mb-4"></div>
+            <div class="ts-contact-card mt-2">
+              <h3><span class="material-symbols-rounded" aria-hidden="true">location_on</span>Find us at Projects Day</h3>
+              <p class="mb-0"><span id="contact-stand">Stand details coming soon</span></p>
+            </div>
+          </div>
+          <div class="col-lg-6 ts-reveal" data-delay="1">
+            <div class="ts-contact-card">
+              <h3><span class="material-symbols-rounded" aria-hidden="true">handshake</span>Connect on LinkedIn</h3>
+              <div id="contact-linkedin"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="ts-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <a class="ts-footer-brand text-decoration-none" href="#top"><img src="assets/img/brand/emblem-256.png" alt="" width="56" height="56" loading="lazy"><span><strong class="ts-brand-word"><span class="trace">Trace</span><span class="stock">Stock</span></strong><small>Offline today, connected tomorrow</small></span></a>
+          <p class="mb-0">An off-grid digital livestock traceability and monitoring system for farming cooperatives. Built by Team Nexus at the University of Johannesburg.</p>
+        </div>
+        <div class="col-6 col-lg-3 offset-lg-1">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="#problem">The problem</a></li>
+            <li><a href="#solution">The solution</a></li>
+            <li><a href="#how-it-works">How it works</a></li>
+            <li><a href="#engineering">Engineering</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h2>About</h2>
+          <ul>
+            <li><a href="#tech">Technology</a></li>
+            <li><a href="#tiers">Hardware tiers</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ts-footer-bottom d-flex flex-column flex-md-row justify-content-between gap-2">
+        <span>© <span id="year">2026</span> Team Nexus (Team 67) · University of Johannesburg</span>
+        <span>UI built on <a href="https://www.creative-tim.com/product/material-kit" target="_blank" rel="noopener">Material Kit</a> by Creative Tim (MIT) · Logos via <a href="https://simpleicons.org" target="_blank" rel="noopener">Simple Icons</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="ts-back-top" type="button" aria-label="Back to top"><span class="material-symbols-rounded" aria-hidden="true">arrow_upward</span></button>
+
+  <script src="assets/vendor/material-kit/popper.min.js"></script>
+  <script src="assets/vendor/material-kit/bootstrap.min.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

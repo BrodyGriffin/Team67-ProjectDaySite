@@ -1,0 +1,10 @@
+.git
+.gitignore
+.dockerignore
+.vscode
+.idea
+Dockerfile
+docker-compose.yml
+README.md
+*.tar
+assets/img/screens/README.md
