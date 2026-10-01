@@ -26,7 +26,7 @@ All other copy is in `index.html`.
 Open `index.html` directly in a browser, or serve the folder:
 
 ```bash
-npx serve .            # or: python -m http.server 8080
+npx serve .            # or: python -m http.server 8090
 ```
 
 ## Docker
@@ -35,8 +35,8 @@ npx serve .            # or: python -m http.server 8080
 # Build the image
 docker build -t tracestock-projectday .
 
-# Run it at http://localhost:8080
-docker run -d --name tracestock-projectday -p 8080:80 tracestock-projectday
+# Run it at http://localhost:8090
+docker run -d --name tracestock-projectday -p 8090:80 tracestock-projectday
 
 # Or use compose
 docker compose up -d --build
